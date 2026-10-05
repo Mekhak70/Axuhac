@@ -2,25 +2,41 @@ import type { Metadata, Viewport } from 'next'
 import './globals.css'
 import { Analytics } from '@vercel/analytics/next'
 
-const imageUrl =
-  'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/IMAGE%202026-10-05%2020%3A43%3A21-2gRkjzWgD3YVzBD6dbsKZyF1Q1RrFI.jpg'
+const siteUrl = 'https://axuhac.vercel.app'
 
 export const metadata: Metadata = {
+  metadataBase: new URL(siteUrl),
+
   title: 'Աղ ու Հաց | Արագ սնունդ Երևանում',
 
   description:
     'Աղ ու Հաց — համեղ, թարմ և արագ սնունդ։ Պատվիրեք առցանց և ստացեք ձեր սիրելի ուտեստները։',
 
-  metadataBase: new URL('https://agh-u-hats.vercel.app'),
+  icons: {
+    icon: [
+      {
+        url: '/favicon.png',
+        type: 'image/png',
+      },
+    ],
+    shortcut: '/favicon.png',
+    apple: '/favicon.png',
+  },
 
   openGraph: {
-    title: 'Աղ ու Հաց | Agh u Hats',
-    description: 'Հայկական ջերմություն՝ յուրաքանչյուր կծումում',
     type: 'website',
-    url: 'https://agh-u-hats.vercel.app',
+    url: siteUrl,
+    siteName: 'Աղ ու Հաց',
+    locale: 'hy_AM',
+
+    title: 'Աղ ու Հաց | Agh u Hats',
+
+    description:
+      'Հայկական ջերմություն՝ յուրաքանչյուր կծումում',
+
     images: [
       {
-        url: imageUrl,
+        url: '/logo.png',
         width: 1200,
         height: 630,
         alt: 'Աղ ու Հաց | Agh u Hats',
@@ -30,15 +46,13 @@ export const metadata: Metadata = {
 
   twitter: {
     card: 'summary_large_image',
-    title: 'Աղ ու Հաց | Agh u Hats',
-    description: 'Հայկական ջերմություն՝ յուրաքանչյուր կծումում',
-    images: [imageUrl],
-  },
 
-  icons: {
-    icon: imageUrl,
-    shortcut: imageUrl,
-    apple: imageUrl,
+    title: 'Աղ ու Հաց | Agh u Hats',
+
+    description:
+      'Հայկական ջերմություն՝ յուրաքանչյուր կծումում',
+
+    images: ['/logo.png'],
   },
 }
 
@@ -62,4 +76,4 @@ export default function RootLayout({
       </body>
     </html>
   )
-} 
+}
