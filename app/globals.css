@@ -1,0 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Armenian:wght@400;500;600;700;800&display=swap');
+@import 'tailwindcss';
+@import 'tw-animate-css';
+@import 'shadcn/tailwind.css';
+@custom-variant dark (&:is(.dark *));
+@theme inline { --color-background: var(--background); --color-foreground: var(--foreground); --color-card: var(--card); --color-card-foreground: var(--card-foreground); --color-primary: var(--primary); --color-primary-foreground: var(--primary-foreground); --color-muted: var(--muted); --color-muted-foreground: var(--muted-foreground); --color-border: var(--border); --color-ring: var(--ring); --radius-xl: 1.5rem; }
+:root { --background:#f2eee8; --foreground:#303236; --card:#fff; --card-foreground:#303236; --primary:#303236; --primary-foreground:#fff; --muted:#e8e1d8; --muted-foreground:#665849; --border:#d9d0c4; --ring:#c5a06a; --radius:1rem; }
+*{box-sizing:border-box} html{scroll-behavior:smooth} body{margin:0;background:var(--background);color:var(--foreground);font-family:'Noto Sans Armenian',Arial,sans-serif} ::selection{background:#c5a06a;color:#303236} .font-display{font-family:'Noto Sans Armenian',Arial,sans-serif;font-weight:700;letter-spacing:-.03em} .ornament{background-image:radial-gradient(#c5a06a44 1px,transparent 1px);background-size:14px 14px} .container-wide{width:min(1180px,calc(100% - 32px));margin-inline:auto} .grain{background-image:linear-gradient(135deg,#ffffff18 25%,transparent 25%,transparent 50%,#ffffff18 50%,#ffffff18 75%,transparent 75%);background-size:5px 5px}
