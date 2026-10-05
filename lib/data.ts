@@ -44,8 +44,12 @@ export const navItems=['home','about','menu','contact','faq'] as const
 export const navPaths={home:'',about:'about',menu:'menu',contact:'contact',faq:'faq'} as const
 export type NavKey=typeof navItems[number]
 export const deliveryText={hy:'10,000 ֏-ից սկսած՝ առաքումն անվճար է',ru:'Бесплатная доставка от 10 000 ֏',en:'Free delivery from 10,000 ֏'}
-export const phone='+374 77 24 24 24'
-export const address={hy:'Երևան, Կոմիտաս 49',ru:'Ереван, Комитаса 49',en:'49 Komitas Ave, Yerevan'}
+export const phone='+374 33 48-17-48'
+export const address = {
+  hy: 'Երևան, Բագրատունյաց 33/4',
+  ru: 'Ереван, Багратуняц 33/4',
+  en: '33/4 Bagratunyats Ave, Yerevan',
+}
 export const hours={hy:'Ամեն օր · 10:00—23:00',ru:'Ежедневно · 10:00—23:00',en:'Daily · 10:00—23:00'}
 export const imgUrl=(id:string)=>`https://images.unsplash.com/${id}?auto=format&fit=crop&w=1200&q=85`
 export const imageIds={hero:'photo-1601050690597-df0568f70950',story:'photo-1515003197210-e0cd71810b5f',about:'photo-1547592180-85f173990554'}
