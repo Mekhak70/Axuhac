@@ -127,7 +127,11 @@ export const getHeroImage=()=>imgUrl(imageIds.hero)
 export const getStoryImage=()=>imgUrl(imageIds.story)
 export const getAboutImage=()=>imgUrl(imageIds.about)
 export const generatedAt='2026-10-05'
-export const restaurantTagline={hy:'Հայկական ջերմություն՝ յուրաքանչյուր կծումում',ru:'Армянское тепло в каждом кусочке',en:'Armenian warmth in every bite'}
+export const restaurantTagline = {
+  hy: 'Հայկական ջերմություն՝ յուրաքանչյուր պատառի մեջ',
+  ru: 'Армянское тепло в каждом кусочке',
+  en: 'Armenian warmth in every bite',
+}
 export const menuIntro={hy:'Անկեղծ բաղադրիչներ, մեծ համ և մի փոքրիկ սեր՝ ամեն ափսեում։',ru:'Честные ингредиенты, большой вкус и немного любви в каждой тарелке.',en:'Honest ingredients, big flavor and a little love in every plate.'}
 export const contactIntro={hy:'Գրեք կամ զանգահարեք մեզ — ուրախ կլինենք օգնել։',ru:'Напишите или позвоните — будем рады помочь.',en:'Write or call us — we are happy to help.'}
 export const aboutBody={hy:'Մենք հավատում ենք, որ լավ սնունդը միավորում է մարդկանց։ Աղ ու Հացը ստեղծվել է Երևանի առօրյային համ, ջերմություն ու մի փոքր դադար ավելացնելու համար։',ru:'Мы верим, что хорошая еда объединяет людей. Аг ու Хац создан, чтобы добавлять вкуса, тепла и паузы в повседневный Ереван.',en:'We believe good food brings people together. Agh u Hats was created to add flavor, warmth and a pause to everyday Yerevan.'}
