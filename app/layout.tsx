@@ -2,7 +2,7 @@ import type { Metadata, Viewport } from 'next'
 import './globals.css'
 import { Analytics } from '@vercel/analytics/next'
 
-const siteUrl = 'https://axuhac.vercel.app/'
+const siteUrl = 'https://axuhac.vercel.app'
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
@@ -13,12 +13,7 @@ export const metadata: Metadata = {
     'Աղ ու Հաց — համեղ, թարմ և արագ սնունդ։ Պատվիրեք առցանց և ստացեք ձեր սիրելի ուտեստները։',
 
   icons: {
-    icon: [
-      {
-        url: '/favicon.png',
-        type: 'image/png',
-      },
-    ],
+    icon: '/favicon.png',
     shortcut: '/favicon.png',
     apple: '/favicon.png',
   },
@@ -28,31 +23,25 @@ export const metadata: Metadata = {
     url: siteUrl,
     siteName: 'Աղ ու Հաց',
     locale: 'hy_AM',
-
     title: 'Աղ ու Հաց | Agh u Hats',
-
-    description:
-      'Հայկական ջերմություն՝ յուրաքանչյուր կծումում',
+    description: 'Հայկական ջերմություն՝ յուրաքանչյուր կծումում',
 
     images: [
       {
-        url: '/logo.png',
+        url: `${siteUrl}/logo.png`,
         width: 1200,
         height: 630,
         alt: 'Աղ ու Հաց | Agh u Hats',
+        type: 'image/png',
       },
     ],
   },
 
   twitter: {
     card: 'summary_large_image',
-
     title: 'Աղ ու Հաց | Agh u Hats',
-
-    description:
-      'Հայկական ջերմություն՝ յուրաքանչյուր կծումում',
-
-    images: ['/logo.png'],
+    description: 'Հայկական ջերմություն՝ յուրաքանչյուր կծումում',
+    images: [`${siteUrl}/logo.png`],
   },
 }
 
