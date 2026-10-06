@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     siteName: 'Աղ ու Հաց',
     locale: 'hy_AM',
     title: 'Աղ ու Հաց | Agh u Hats',
-    description: 'Հայկական ջերմություն՝ յուրաքանչյուր կծումում',
+    description: 'Հայկական ջերմություն՝ յուրաքանչյուր պատառիկում',
 
     images: [
       {
@@ -40,7 +40,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Աղ ու Հաց | Agh u Hats',
-    description: 'Հայկական ջերմություն՝ յուրաքանչյուր կծումում',
+    description: 'Հայկական ջերմություն՝ յուրաքանչյուր պատառիկում',
     images: [`${siteUrl}/logo.png`],
   },
 }
