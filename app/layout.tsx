@@ -2,7 +2,7 @@ import type { Metadata, Viewport } from 'next'
 import './globals.css'
 import { Analytics } from '@vercel/analytics/next'
 
-const siteUrl = 'https://axuhac.vercel.app'
+const siteUrl = 'https://axuhac.vercel.app/'
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
