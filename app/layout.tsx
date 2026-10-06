@@ -12,8 +12,17 @@ export const metadata: Metadata = {
   description:
     'Աղ ու Հաց — համեղ, թարմ և արագ սնունդ։ Պատվիրեք առցանց և ստացեք ձեր սիրելի ուտեստները։',
 
+  alternates: {
+    canonical: '/',
+  },
+
   icons: {
-    icon: '/favicon.png',
+    icon: [
+      {
+        url: '/favicon.png',
+        type: 'image/png',
+      },
+    ],
     shortcut: '/favicon.png',
     apple: '/favicon.png',
   },
@@ -31,10 +40,11 @@ export const metadata: Metadata = {
 
     images: [
       {
-        url: 'https://axuhac.vercel.app/logo.png',
+        url: `${siteUrl}/og-image.png`,
         width: 1200,
         height: 630,
         alt: 'Աղ ու Հաց | Agh u Hats',
+        type: 'image/png',
       },
     ],
   },
@@ -47,7 +57,12 @@ export const metadata: Metadata = {
     description:
       'Հայկական ջերմություն՝ յուրաքանչյուր պատառիկում',
 
-    images: ['https://axuhac.vercel.app/logo.png'],
+    images: [`${siteUrl}/og-image.png`],
+  },
+
+  robots: {
+    index: true,
+    follow: true,
   },
 }
 
