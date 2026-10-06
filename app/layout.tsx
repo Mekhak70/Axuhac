@@ -25,23 +25,12 @@ export const metadata: Metadata = {
     locale: 'hy_AM',
     title: 'Աղ ու Հաց | Agh u Hats',
     description: 'Հայկական ջերմություն՝ յուրաքանչյուր պատառիկում',
-
-    images: [
-      {
-        url: `${siteUrl}/logo.png`,
-        width: 1200,
-        height: 630,
-        alt: 'Աղ ու Հաց | Agh u Hats',
-        type: 'image/png',
-      },
-    ],
   },
 
   twitter: {
     card: 'summary_large_image',
     title: 'Աղ ու Հաց | Agh u Hats',
     description: 'Հայկական ջերմություն՝ յուրաքանչյուր պատառիկում',
-    images: [`${siteUrl}/logo.png`],
   },
 }
 
